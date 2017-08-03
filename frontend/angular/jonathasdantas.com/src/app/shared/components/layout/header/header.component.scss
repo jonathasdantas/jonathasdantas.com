@@ -1,0 +1,19 @@
+// Variables Override
+$navbar-default-bg: rgba(211, 211, 211, 0.85);
+$navbar-height: 80px;
+$navbar-border-radius: 0px;
+
+// Navbar Fixed Top Padding
+body { 
+  padding-top: $navbar-height;
+}
+
+// Toggle Menu Button
+button {
+  background-color: transparent;
+  border: 0;
+}
+
+a {
+  cursor: pointer;
+}
