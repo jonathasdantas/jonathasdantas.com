@@ -1,6 +1,12 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { PageNotFoundComponent, HeaderComponent, FooterComponent } from "./components";
+import 
+{ 
+  PageNotFoundComponent,
+  HeaderComponent,
+  FooterComponent,
+  NavbarComponent
+} from "./components";
 
 @NgModule({
   imports: [
@@ -9,7 +15,8 @@ import { PageNotFoundComponent, HeaderComponent, FooterComponent } from "./compo
   declarations: [
     PageNotFoundComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    NavbarComponent
   ],
   exports: [
     HeaderComponent,

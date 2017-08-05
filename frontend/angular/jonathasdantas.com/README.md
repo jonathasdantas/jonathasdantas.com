@@ -12,3 +12,10 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
   - createdate
 - Timeline Resume
 - Portifolio
+
+## Sections
+
+- Home
+  - ...
+- Blog
+- Work
