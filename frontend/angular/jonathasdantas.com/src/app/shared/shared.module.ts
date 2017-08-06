@@ -7,10 +7,12 @@ import
   FooterComponent,
   NavbarComponent
 } from "./components";
+import { RouterModule } from "@angular/router";
 
 @NgModule({
   imports: [
-    CommonModule
+    CommonModule,
+    RouterModule
   ],
   declarations: [
     PageNotFoundComponent,

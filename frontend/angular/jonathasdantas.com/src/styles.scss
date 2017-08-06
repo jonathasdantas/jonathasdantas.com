@@ -1,0 +1,19 @@
+/////////////////////////////
+/////////////////////////////
+// General Variables Override
+
+// Typography
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+
+$family-sans-serif: "Ubuntu";
+$body-size: 62.5%;
+
+// Colors
+$primary: #0475b9;
+
+body {
+  font-size: 1.6rem !important;
+}
+
+// Bulma Main Import
+@import './node_modules/bulma/bulma';

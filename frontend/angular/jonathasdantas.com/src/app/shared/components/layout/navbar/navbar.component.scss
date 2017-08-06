@@ -1,0 +1,41 @@
+@import './node_modules/bulma/sass/utilities/_all';
+
+/////////////////////////////
+/////////////////////////////
+// Variables Override
+$navbar-height: 7rem;
+
+/////////////////////////////
+/////////////////////////////
+// Variables
+$navbar-font-size: 2rem;
+$navbar-brand-font-size: 2.8rem;
+
+$primary: #0475b9;
+
+.navbar {
+  color: #FFF;
+
+  .navbar-menu {
+    .navbar-item {
+      font-size: $navbar-font-size;
+      padding: 1rem 2.75rem;
+
+      &.is-active span {
+        border-bottom: 0.3rem solid $primary;
+      }
+    }
+  }
+  
+  .navbar-brand {
+    .navbar-item {
+      font-size: $navbar-brand-font-size;
+
+      span {
+        color: $primary;
+      }
+    }
+  }
+}
+
+@import './node_modules/bulma/sass/components/navbar';

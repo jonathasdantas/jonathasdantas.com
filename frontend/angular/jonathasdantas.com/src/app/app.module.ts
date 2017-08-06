@@ -6,7 +6,10 @@ import { RouterModule, Routes } from '@angular/router';
 import { AppComponent } from './app.component';
 import { SharedModule } from "./shared";
 import { PageNotFoundComponent } from "./shared/components";
-import { HomeModule } from "./home/home.module";
+
+import { AboutModule } from "./about/about.module";
+import { WorkModule } from "./work/work.module";
+import { BlogModule } from "./blog/blog.module";
 
 const appRoutes: Routes = [
   {
@@ -22,7 +25,9 @@ const appRoutes: Routes = [
   imports: [
     RouterModule.forRoot(appRoutes),
     BrowserModule,
-    HomeModule,
+    AboutModule,
+    WorkModule,
+    BlogModule,
     SharedModule
   ],
   providers: [],

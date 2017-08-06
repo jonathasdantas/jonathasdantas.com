@@ -1,6 +1,7 @@
+<div class="container">
 <nav class="navbar">
   <div class="navbar-brand">
-    <a class="navbar-item" href="#">jonathasdantas.com</a>
+    <span class="navbar-item" href="#">jonathasdantas<span>.com</span></span>
 
     <div class="navbar-burger" [ngClass]="{ 'is-active': isOpened() }" (click)="toggle()">
       <span></span>
@@ -10,8 +11,20 @@
   </div>
   <div class="navbar-menu" [ngClass]="{ 'is-active': isOpened() }">
     <div class="navbar-end">
-      <a class="navbar-item" href="#">Work</a>
-      <a class="navbar-item" href="#">Blog</a>
+      <a class="navbar-item" routerLink="/about" routerLinkActive="is-active">
+        <span>About</span>
+      </a>
+      <a class="navbar-item" routerLink="/work" routerLinkActive="is-active">
+        <span>Work</span>
+      </a>
+      <a class="navbar-item" routerLink="/blog" routerLinkActive="is-active">
+        <span>Blog</span>
+      </a>
+
+      <a class="navbar-item" href="mailto:jonathasdantas@gmail.com">
+        Hire Me
+      </a>
     </div>
   </div>
 </nav>
+</div>

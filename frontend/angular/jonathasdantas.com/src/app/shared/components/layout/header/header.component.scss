@@ -1,19 +1,29 @@
-// Variables Override
-$navbar-default-bg: rgba(211, 211, 211, 0.85);
-$navbar-height: 80px;
-$navbar-border-radius: 0px;
+$primary: #FFF;
 
-// Navbar Fixed Top Padding
-body { 
-  padding-top: $navbar-height;
+navbar {
+  display: block;
+  background-color: $primary;
+
+  width: 100%;
+  position: fixed;
+  z-index: 1;
 }
 
-// Toggle Menu Button
-button {
-  background-color: transparent;
-  border: 0;
-}
+section {
+  width: 100%;
 
-a {
-  cursor: pointer;
+  background-repeat: round;
+  background-size: 100%;
+
+  padding-top: 7rem;
+
+  .title {
+    font-size: 4rem;
+    color: $primary;
+  }
+
+  .subtitle {
+    font-size: 2.5rem;
+    color: $primary;
+  }
 }
