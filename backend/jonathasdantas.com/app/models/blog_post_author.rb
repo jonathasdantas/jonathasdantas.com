@@ -1,0 +1,2 @@
+class BlogPostAuthor < ApplicationRecord
+end
