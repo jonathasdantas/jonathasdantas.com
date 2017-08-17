@@ -1,0 +1,23 @@
+@import './node_modules/bulma/sass/utilities/_all';
+
+// Colors
+$primary: #0475b9;
+
+*, h1, h2, h3, h4, h5 {
+  color: #FFF;
+}
+
+a:hover {
+  color: #FFF;
+  text-decoration: underline;
+}
+
+hr {
+  margin: 4rem 0;
+  background-color: $primary;
+  height: 2px;
+}
+
+.icon {
+  margin-right: 0.7rem;
+}

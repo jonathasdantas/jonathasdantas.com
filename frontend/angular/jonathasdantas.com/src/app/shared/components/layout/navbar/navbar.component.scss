@@ -24,6 +24,11 @@ $primary: #0475b9;
       &.is-active span {
         border-bottom: 0.3rem solid $primary;
       }
+
+      span.highlight {
+        color: $primary;
+        font-weight: bold;
+      }
     }
   }
   

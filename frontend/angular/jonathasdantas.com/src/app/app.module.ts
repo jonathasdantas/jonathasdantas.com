@@ -10,6 +10,7 @@ import { PageNotFoundComponent } from "./shared/components";
 import { AboutModule } from "./about/about.module";
 import { WorkModule } from "./work/work.module";
 import { BlogModule } from "./blog/blog.module";
+import { AdminModule } from "./admin/admin.module";
 
 const appRoutes: Routes = [
   {
@@ -28,7 +29,8 @@ const appRoutes: Routes = [
     AboutModule,
     WorkModule,
     BlogModule,
-    SharedModule
+    SharedModule,
+    AdminModule
   ],
   providers: [],
   exports: [

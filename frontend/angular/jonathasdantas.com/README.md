@@ -10,6 +10,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
   - subtitle
   - updatedate
   - createdate
+  - share button
 - Timeline Resume
 - Portifolio
 

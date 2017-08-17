@@ -1,7 +1,7 @@
 <div class="container">
 <nav class="navbar">
   <div class="navbar-brand">
-    <span class="navbar-item" href="#">jonathasdantas<span>.com</span></span>
+    <span class="navbar-item" href="#">jonathasdantas<span>{{ getSuffix() }}</span></span>
 
     <div class="navbar-burger" [ngClass]="{ 'is-active': isOpened() }" (click)="toggle()">
       <span></span>
@@ -21,8 +21,8 @@
         <span>Blog</span>
       </a>
 
-      <a class="navbar-item" href="mailto:jonathasdantas@gmail.com">
-        Hire Me
+      <a class="navbar-item" href="mailto:jonathasdantas@gmail.com?subject=New Challenge">
+        <span class="highlight">Hire Me</span>
       </a>
     </div>
   </div>

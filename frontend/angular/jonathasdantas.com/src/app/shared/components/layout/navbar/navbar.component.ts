@@ -1,4 +1,5 @@
-import { Component, OnInit, Output } from '@angular/core';
+import { Component, OnInit, Inject } from '@angular/core';
+import { DOCUMENT } from '@angular/platform-browser';
 
 @Component({
   selector: 'navbar',
@@ -8,12 +9,17 @@ import { Component, OnInit, Output } from '@angular/core';
 export class NavbarComponent implements OnInit {
 
   private opened: boolean;
+  private suffix: string;
 
-  constructor() {
+  constructor(@Inject(DOCUMENT) private document: any) {
     this.opened = false;
+    this.suffix = '.com';
   }
   
   ngOnInit() {
+    if (this.document.location.hostname.indexOf('.me') > -1) {
+      this.suffix = '.me';
+    }
   }
 
   isOpened() {
@@ -22,6 +28,10 @@ export class NavbarComponent implements OnInit {
 
   toggle() {
     this.opened = !this.opened;
+  }
+
+  getSuffix() {
+    return this.suffix;
   }
 
 }
